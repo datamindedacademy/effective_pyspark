@@ -8,7 +8,9 @@ TARGET_DIR=$(dirname -- $0)/../../data/raw_zone/flights
 
 echo "Downloading data..."
 curl https://dmacademy-course-assets-public.s3.eu-west-1.amazonaws.com/pyspark/AirlineSubsetCsv.tar.gz \
- --output ${LOCAL_TARBALL}
+ --output ${LOCAL_TARBALL} \
+ --silent \
+ --show-error
 
 echo "Unpacking data in the target directory..."
 mkdir -p ${TARGET_DIR}
