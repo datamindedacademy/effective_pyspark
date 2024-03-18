@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # In case you can't configure the Spark Session to allow you to download from
 # the private bucket, you can execute this script.
-set -euxo pipefail
+set -euo pipefail
 
 LOCAL_TARBALL=/tmp/airlines.tar.gz
 TARGET_DIR=$(dirname -- $0)/../../data/raw_zone/flights
