@@ -4,7 +4,7 @@
 set -euxo pipefail
 
 LOCAL_TARBALL=/tmp/airlines.tar.gz
-TARGET_DIR=/workspace/effective_pyspark/data/raw_zone/flights
+TARGET_DIR=$(dirname -- $0)/../../data/raw_zone/flights
 
 echo "Downloading data..."
 curl https://dmacademy-course-assets-public.s3.eu-west-1.amazonaws.com/pyspark/AirlineSubsetCsv.tar.gz \
