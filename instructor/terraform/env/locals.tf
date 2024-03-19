@@ -5,6 +5,5 @@ locals {
   groupname        = "workshop-participants"
   users = {
     student="foo"
-    Oliver="oliver.willekens@dataminded.be"
-}
+  }
 }
